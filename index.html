@@ -280,7 +280,7 @@
         <!-- Contact Form -->
         <div class="mt-10 border-2 border-[var(--brand-color)] p-8 mb-20 rounded-xl">
           <div class="text-2xl text-[var(--brand-color)] font-medium text-center py-5">Contact me</div>
-          <form>
+          <form onsubmit="sendToWhatsApp(event)">
             <label for="Name">Enter Your Name:</label><br>
             <input type="text" name="Name" id="User_name" class="bg-blue-200 border-[2px] p-1.5 outline-0 w-[20rem] rounded-md border-[var(--subtext)]"/><br><br>
             <label for="Name">Enter email:</label><br>
@@ -297,5 +297,6 @@
   <footer>
     <div class="py-3.5 text-center font-normal">&copy; Harish Sonawane. All Right Reserved.</div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
