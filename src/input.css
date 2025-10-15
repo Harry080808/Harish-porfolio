@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@theme {
+  --font-display: "Poppins", sans-serif; 
+  --text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  --cer-shadow: 0px 0px 6px 4px #00C6AE;
+}
+:root{
+    --main-bg:#F3F0FF;
+    --main-text:#1E1E1E;
+    --subtext:#666666;
+    --button-hover:#5A3FFF;
+    --brand-color:#7B61FF;
+    --accent:#00C6AE;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevents horizontal scroll */
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
