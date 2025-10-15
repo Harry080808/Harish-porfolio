@@ -1,8 +1,8 @@
 function sendToWhatsApp(event) {
   event.preventDefault();
   
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
+  const name = document.getElementById("Name").value;
+  const email = document.getElementById("Email").value;
   const message = document.getElementById("message").value;
 
   const phoneNumber = "919321296327"; // Your WhatsApp number (with country code, no +)
