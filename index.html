@@ -11,15 +11,27 @@
 <body class="bg-[var(--main-bg)] font-display">
   <head>
     <nav class="flex h-20 w-full justify-between items-center">
-      <div class="ml-9 text-4xl text-[#7B61FF] font-medium">Portfolio</div>
-      <ul class="flex mr-16 gap-11 text-[1.1rem] text-shadow-md cursor-pointer">
-        <li><a href="#home" class="hover:duration-200 hover:text-[var(--accent)]">Home</a></li>
+      <div class="ml-9 text-2xl sm:text-3xl md:text-4xl text-[#7B61FF] font-medium">Portfolio</div>
+      <ul class="hidden md:flex mr-16 gap-11 text-[1.1rem] text-shadow-md cursor-pointer">
+        <li id="Home"><a href="#home" class="hover:duration-200 hover:text-[var(--accent)]">Home</a></li>
         <li><a href="#about" class="hover:duration-200 hover:text-[var(--accent)]">About</a></li>
         <li><a href="#skills" class="hover:duration-200 hover:text-[var(--accent)]">Skills</a></li>
         <li><a href="#projects" class="hover:duration-200 hover:text-[var(--accent)]">Projects</a></li>
         <li><a href="#contact" class="hover:duration-200 hover:text-[var(--accent)]">Contact</a></li>
       </ul>
+      <div class="md:hidden mr-6 h-7 w-6 sm:w-7" id="menubar" onclick="SlidingMenu()">
+        <img src="/assets/menu_squared.png" alt="Square_MenuBar">
+      </div>
     </nav>
+    <div id="Sidemenu" class="w-full bg-sky-100 md:hidden transition-all duration-500 overflow-hidden" style="transform: translateY(0%); height: 11rem;">
+      <ul class="w-full text-[1.1rem] text-shadow-md cursor-pointer mt-3 flex flex-col items-center gap-3 py-1" id="menuList">
+        <li id="Home"><a href="#home" onclick="removeMenu()" class="hover:duration-200 hover:text-[var(--accent)] ">Home</a></li>
+        <li><a href="#about" onclick="removeMenu()" class="hover:duration-200 hover:text-[var(--accent)]">About</a></li>
+        <li><a href="#skills" onclick="removeMenu()" class="hover:duration-200 hover:text-[var(--accent)]">Skills</a></li>
+        <li><a href="#projects" onclick="removeMenu()" class="hover:duration-200 hover:text-[var(--accent)]">Projects</a></li>
+        <li><a href="#contact" onclick="removeMenu()" class="hover:duration-200 hover:text-[var(--accent)]">Contact</a></li>
+      </ul>
+    </div>
   </head>
   <main>
     <div class="w-full h-[40.5rem] flex justify-between items-center">
