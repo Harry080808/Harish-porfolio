@@ -14,6 +14,10 @@ function sendToWhatsApp(event) {
   window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
 }
 
+document.addEventListener("DOMContentLoaded",function() {
+  const sidemenu = document.getElementById('Sidemenu')
+  sidemenu.style.display = "none";
+})
 
 function SlidingMenu(){
   const sidemenu = document.getElementById('Sidemenu')
