@@ -15,8 +15,9 @@ function sendToWhatsApp(event) {
 }
 
 document.addEventListener("DOMContentLoaded",function() {
-  const sidemenu = document.getElementById('Sidemenu')
-  sidemenu.style.display = "none";
+  const sidemenu = document.getElementById('Sidemenu');
+  sidemenu.style.transform = "translateY(-100%)";
+  sidemenu.style.height = "0";
 })
 
 function SlidingMenu(){
