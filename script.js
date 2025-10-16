@@ -17,13 +17,14 @@ function sendToWhatsApp(event) {
 
 function SlidingMenu(){
   const sidemenu = document.getElementById('Sidemenu')
-  // Check current transform value
+  const menu = document.getElementById('menubar');
   const currentTransform = sidemenu.style.transform;
 
   if (currentTransform === "translateY(-100%)" || currentTransform === "") {
     // Show the menu
     sidemenu.style.transform = "translateY(0%)";
     sidemenu.style.height = "14rem";
+    
     
   } else {
     // Hide the menu
