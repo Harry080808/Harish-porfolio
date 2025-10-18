@@ -28,7 +28,7 @@ function SlidingMenu(){
   if (currentTransform === "translateY(-100%)" || currentTransform === "") {
     // Show the menu
     sidemenu.style.transform = "translateY(0%)";
-    sidemenu.style.height = "12rem";
+    sidemenu.style.height = "14rem";
     
     
   } else {
