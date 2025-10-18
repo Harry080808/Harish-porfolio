@@ -108,3 +108,12 @@ const roles = ["Java Fullstack Developer", "Software Engineer", "Backend Develop
   }
 
   document.addEventListener("DOMContentLoaded", typeEffect);
+
+  gsap.from("#myintro .line", {
+  y: -40,
+  opacity: 0,
+  duration: 0.6,
+  stagger: 0.3,
+  ease: "power3.out"
+});
+
