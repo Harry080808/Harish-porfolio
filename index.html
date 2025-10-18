@@ -13,14 +13,14 @@
   <head>
     <nav class="flex h-20 w-full justify-between items-center">
       <div id="Web_logo" class="ml-9 text-2xl sm:text-3xl md:text-4xl text-[#7B61FF] font-medium">Portfolio</div>
-      <ul class="hidden md:flex mr-16 gap-11 text-[1.1rem] text-shadow-md cursor-pointer">
+      <ul id="Desktop_menu" class="hidden md:flex mr-16 gap-11 text-[1.1rem] text-shadow-md cursor-pointer">
         <li id="Home"><a href="#home" class="hover:duration-200 hover:text-[var(--accent)]">Home</a></li>
         <li><a href="#about" class="hover:duration-200 hover:text-[var(--accent)]">About</a></li>
         <li><a href="#skills" class="hover:duration-200 hover:text-[var(--accent)]">Skills</a></li>
         <li><a href="#projects" class="hover:duration-200 hover:text-[var(--accent)]">Projects</a></li>
         <li><a href="#contact" class="hover:duration-200 hover:text-[var(--accent)]">Contact</a></li>
       </ul>
-      <div class="md:hidden mr-2 mt-4 h-12 w-12 sm:w-7" id="menubar" onclick="SlidingMenu()">
+      <div id="mobile_menu" class="md:hidden mr-2 mt-4 h-12 w-12 sm:w-7" id="menubar" onclick="SlidingMenu()">
         <i class="fa-solid fa-bars" style="color: #7b61ff;"></i>
       </div>
     </nav>
@@ -312,6 +312,7 @@
   <footer>
     <div class="py-2.5 md:py-3.5 text-center font-normal text-[13px] md:text-[16px]">&copy; Harish Sonawane. All Right Reserved.</div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>

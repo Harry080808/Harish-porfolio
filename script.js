@@ -44,6 +44,19 @@ function removeMenu() {
   sidemenu.style.height = "0";
 }
 
-gsap.to("Web_logo",{
-  
+gsap.from("#Web_logo",{
+    y:-60,
+    duration:0.7,
+    delay:0.4
+})
+
+gsap.from("#Desktop_menu",{
+    y:-60,
+    duration:0.7,
+    delay:0.8
+})
+gsap.from("#mobile_menu",{
+    y:-60,
+    duration:0.7,
+    delay:0.8
 })
