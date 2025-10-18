@@ -55,7 +55,7 @@ gsap.from("#Desktop_menu",{
     duration:0.7,
     delay:0.8
 })
-gsap.from("#mobile_menu",{
+gsap.from("#menubar",{
     y:-60,
     duration:0.7,
     delay:0.8
