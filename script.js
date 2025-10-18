@@ -43,3 +43,7 @@ function removeMenu() {
   sidemenu.style.transform = "translateY(-100%)";
   sidemenu.style.height = "0";
 }
+
+gsap.to("Web_logo",{
+  
+})
