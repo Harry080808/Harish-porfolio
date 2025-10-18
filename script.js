@@ -60,3 +60,51 @@ gsap.from("#menubar",{
     duration:0.7,
     delay:0.8
 })
+
+const roles = ["Java Fullstack Developer", "Software Engineer", "Backend Developer"];
+  const products = ["Code", "Website", "App"];
+
+  const roleElement = document.getElementById("role");
+  const productElement = document.getElementById("product");
+
+  let roleIndex = 0, roleCharIndex = 0;
+  let productIndex = 0, productCharIndex = 0;
+  let deletingRole = false, deletingProduct = false;
+
+  function typeEffect() {
+    // Role typing
+    if (!deletingRole && roleCharIndex <= roles[roleIndex].length) {
+      roleElement.textContent = roles[roleIndex].substring(0, roleCharIndex++);
+    } else if (deletingRole && roleCharIndex >= 0) {
+      roleElement.textContent = roles[roleIndex].substring(0, roleCharIndex--);
+    }
+
+    if (roleCharIndex === roles[roleIndex].length + 1) {
+      deletingRole = true;
+      setTimeout(typeEffect, 1000);
+      return;
+    } else if (roleCharIndex < 0) {
+      deletingRole = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    // Product typing
+    if (!deletingProduct && productCharIndex <= products[productIndex].length) {
+      productElement.textContent = products[productIndex].substring(0, productCharIndex++);
+    } else if (deletingProduct && productCharIndex >= 0) {
+      productElement.textContent = products[productIndex].substring(0, productCharIndex--);
+    }
+
+    if (productCharIndex === products[productIndex].length + 1) {
+      deletingProduct = true;
+      setTimeout(typeEffect, 1000);
+      return;
+    } else if (productCharIndex < 0) {
+      deletingProduct = false;
+      productIndex = (productIndex + 1) % products.length;
+    }
+
+    setTimeout(typeEffect, deletingRole || deletingProduct ? 50 : 120);
+  }
+
+  document.addEventListener("DOMContentLoaded", typeEffect);
