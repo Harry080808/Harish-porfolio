@@ -61,7 +61,7 @@ gsap.from("#menubar",{
     delay:0.8
 })
 
-const roles = ["Java Fullstack Developer", "Software Engineer", "Backend Developer"];
+  const roles = ["Java Fullstack Developer", "Software Engineer", "Backend Developer"];
   const products = ["Code", "Website", "App"];
 
   const roleElement = document.getElementById("role");
